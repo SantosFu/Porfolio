@@ -1,0 +1,343 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+h2{
+    font-size:xx-large;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+    line-height: 3;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+  /* Estilo del Header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0050C3; /* Fondo azul oscuro */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: top 0.3s; /* Suaviza el desplazamiento */
+}
+
+.logo {
+    height: 40px; /* Ajusta el tamaño del logo */
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 80px; /* Ajuste para no tapar el contenido */
+    padding: 20px;
+}
+
+.header .logo:hover {
+    opacity: 0.8; 
+}
+
+.header p{
+  padding: 1%;
+       
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* Sobre mí */
+.about-container {
+    height: 100vh;
+    background: #f4f4f4; 
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    border: 2px solid white; /* Borde del contenedor */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo del contenedor */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+
+    
+
+}
+
+.about-text {
+    flex: auto;
+    text-align: justify;
+    padding: 5%;
+        font-size: 1.2rem;
+        line-height: 1.6;
+
+}
+
+.about-image img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+        border: 8px solid #fff; /* Borde llamativo */
+        box-shadow: 0 0 20px #fff, 0 0 30px #0050C3; /* Brillo */
+        
+        object-fit: contain;
+
+}
+
+/* Proyectos */
+.projects-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+.project img{
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 1rem);
+    text-align: center;
+    
+
+}
+
+
+/* Carrusel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel-title {
+    flex: 1;
+    text-align: left;
+}
+
+.carousel {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    
+
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.carousel button {
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+    background-color: #0050C3;
+    border-radius: 5px;
+    border-bottom: #333;
+}
+
+#next {
+    right: 10px;
+    background-color: #0050C3;
+    border-radius: 5px;
+    border-bottom: #333;
+}
+
+
+
+/* sector anteultimo */
+
+.elementos {
+    height: 100vh;
+    background: #0050C3;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px transparent black; /* Borde del contenedor */
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo del contenedor */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+
+    
+
+}
+
+.imagenes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px; /* Espacio entre imágenes */
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 6px solid #fff; /* Borde dorado */
+    box-shadow: 0 0 15px #fff, 0 0 20px #0050C3; /* Brillo */
+}
+
+.imagenes img:first-child {
+    height: 220px; /* Imagen más baja */
+}
+
+.imagenes img:last-child {
+    height: 280px; /* Imagen más alta */
+}
+
+.datos {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.datos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Color dorado */
+}
+
+.datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos ul li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.datos ul li::before {
+    content: "✔";
+    color: #0050C3; /* Icono dorado */
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/* Imagen final */
+.final-image-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.final-image-text {
+    flex: 1;
+    text-align: right;
+}
+
+.final-image img {
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #002244; 
+        padding: 10px 20px;
+        color: white;
+        border-top: 2px solid #0050C3; 
+        font-size: 1rem;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-left i {
+        font-size: 1.5rem;
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-right a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+
+    }
+
+    .footer-right a:hover {
+        color: #f4f4f4; /* Cambia a dorado al pasar el mouse */
+    }
+
+    .footer-right i {
+        font-size: 1.5rem;
+    }
+
+    .footer-right img{
+        max-width: 25px;
+        max-height: 25px;
+
+    }
